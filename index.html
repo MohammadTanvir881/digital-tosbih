@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbih</title>
+    <!-- tailwind and daisy ui link-->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+         .font-roboto {
+            font-family: 'Roboto', sans-serif;
+         }
+         button:hover {
+            box-shadow: 1px 1px 5px black;
+         }
+    </style>
+
+</head>
+
+<body class="font-roboto container mx-auto px-5 lg:px-20">
+    <!-- heading section starts-->
+    <section class="text-center mt-5 lg:mt-28 mb-8">
+         <h1 class="font-roboto text-5xl py-5 font-roboto font-extrabold bg-gradient-to-r from-blue-600 to-green-500 bg-clip-text text-transparent"> Digital Tasbih</h1>
+    </section>
+
+    <!-- card section starts here-->
+
+    <section id="section-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7" >
+        <div class="card  bg-base-100 shadow-lg text-center space-y-7 p-5">
+            <figure class="px-10 pt-10">
+              <h2 class="text-4xl font-medium text-[#313131] " id="SubhanAllahText"> Subhan Allah</h2>
+            </figure>
+             <p class="text-4xl font-roboto" id="subhan-count">0</p>
+              <div class="card-actions text-center flex justify-center">
+                <button class="bg-[#3FCC74] btn btn-primary border-none px-8 py-2 rounded-lg text-white font-medium" id="SubhanAllahIncrimentBtn">Incriment</button>
+                <button class="bg-[#ED4345] px-8 py-2 btn btn-secondary border-none  rounded-lg text-white font-medium" id="SubhanAllahDecrimentBtn">Decriment</button>
+                
+              </div>
+            </div>
+          </div>
+          <!-- card 2-->          
+        <div class="card  bg-base-100 shadow-lg text-center space-y-7 p-5">
+            <figure class="px-10 pt-10">
+              <h2 class="text-4xl font-medium text-[#313131] " id="AllahhuAkbarText"> Allahhu Akbar</h2>
+            </figure>
+             <p class="text-4xl font-roboto" id="allahu-count">0</p>
+              <div class="card-actions text-center flex justify-center">
+                <button class="bg-[#3FCC74] btn btn-primary border-none  px-8 py-2 rounded-lg text-white font-medium" id="AllahhuAkbarIncrimentBtn">Incriment</button>
+                <button class="bg-[#ED4345] btn btn-secondary border-none  px-8 py-2 rounded-lg text-white font-medium" id="AllahhuAkbarDecrimentBtn">Decriment</button>
+                
+              </div>
+            </div>
+          </div>   
+          
+          <!--card 3-->
+        <div class="card  bg-base-100 shadow-lg text-center space-y-7 p-5">
+            <figure class="px-10 pt-10">
+              <h2 class="text-4xl font-medium text-[#313131] " id="AlhamdulliahText"> Alhamdulliah</h2>
+            </figure>
+             <p class="text-4xl font-roboto" id="alhamdulliah-count">0</p>
+              <div class="card-actions text-center flex justify-center">
+                <button class="bg-[#3FCC74] btn btn-primary border-none  px-8 py-2 rounded-lg text-white font-medium" id="AlhamdulliahIncrimentBtn">Incriment</button>
+                <button class="bg-[#ED4345] btn btn-secondary border-none  px-8 py-2 rounded-lg text-white font-medium" id="AlhamdulliahDecrimentBtn">Decriment</button>
+                
+              </div>
+            </div>
+          </div>          
+    </section>
+
+    <!--Reset button text-->
+    <section class="text-center mt-10 mb-10">
+         <button class="btn btn-primary" id="reset-button">Reset All Tasbih</button>
+    </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
